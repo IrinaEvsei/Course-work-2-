@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/convolutionLinearLayout"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/homeAsUpIndicator"
+        android:onClick="onMenuBack"
+        android:textColor="@color/textColorPrimary"
+        android:visibility="visible" />
+        <!--android:background="@drawable/ic_arrow_back_white_24dp"-->
+
+
+    <Button
+        android:id="@+id/laplacianButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="onLaplacian"
+        android:text="@string/laplacian"
+        android:textColor="@color/textColorPrimary" />
+
+    <Button
+        android:id="@+id/sobelButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onSobel"
+        android:text="@string/sobel"
+        android:textColor="@color/textColorPrimary" />
+</LinearLayout>

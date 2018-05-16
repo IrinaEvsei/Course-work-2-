@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ImageMaker v.2</string>
+    <string name="title_activity_main">ImageMaker</string>
+    <string name="image_saved">Image saved successfully</string>
+    <string name="image_not_saved">Error: image not saved</string>
+    <string name="hint_save_dialog">Filename</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="laplacian">Laplacian</string>
+    <string name="sobel">Sobel</string>
+    <string name="histogram">Histogram</string>
+    <string name="color_picker">Color picker</string>
+    <string name="Shade">Shade</string>
+    <string name="greyscale">Greyscale</string>
+    <string name="sepia">Sepia</string>
+    <string name="negative">Negative</string>
+    <string name="sketch">Sketch</string>
+    <string name="adjust">ADJUST</string>
+    <string name="filter">FILTER</string>
+    <string name="convolution">CONVOLUTION</string>
+    <string name="no_filename">A filename is required !</string>
+</resources>

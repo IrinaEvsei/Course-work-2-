@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="courseproject.imagemaker.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/ic_menu_revert"
+        android:onClick="onUndo" />
+
+    <View
+        android:id="@+id/topCenter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/loadFromGalleryButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/topCenter"
+        android:layout_toStartOf="@+id/topCenter"
+        android:background="@android:drawable/ic_menu_gallery"
+        android:onClick="onLoadFromGallery" />
+
+    <Button
+        android:id="@+id/loadFromCameraButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/topCenter"
+        android:layout_toRightOf="@id/topCenter"
+        android:background="@android:drawable/ic_menu_camera"
+        android:onClick="onLoadFromCamera" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/ic_menu_save"
+        android:onClick="onSaveButtonClicked" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="#99ffffff" />
+
+    <include
+        android:id="@+id/bottomBarLayout"
+        layout="@layout/btmbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/filterOptionsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBarLayout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#99ffffff" />
+
+    <courseproject.imagemaker.ImageViewActivity
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/filterOptionsLinearLayout"
+        android:layout_below="@id/loadFromCameraButton"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
